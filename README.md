@@ -8,7 +8,13 @@ A starter template for orb projects. Build, test, and publish orbs automatically
 
 Additional READMEs are available in each directory.
 
+## Publish locally
 
+```
+circleci orb pack src > orb.yml
+circleci orb validate orb.yml
+circleci orb publish orb.yml signavio/helm-orb@dev:alpha
+```
 
 ## Resources
 
